@@ -1,0 +1,86 @@
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  
+  body section{
+    position: absolute;
+    right:1700px;
+    bottom: 657px;
+    border: 3px solid grey;
+    padding: 5px;
+    color: white;
+  }
+  
+  #costumes
+    .cos1
+    {
+      position: absolute;
+      right:  500px;
+      bottom: 650px;
+      border: 4px solid white;
+    }  
+    .cos2
+    {
+      position: absolute;
+      right: 250px;
+      bottom: 650px;
+      border: 4px solid white;
+    }
+  .cos3
+    {
+      position: absolute;
+      right: 250px;
+      bottom: 450px;
+      border: 4px solid white;
+    }
+  .cos4
+    {
+      position: absolute;
+      right:  500px;
+      bottom: 450px;
+      border: 4px solid white;
+    }  
+  .cos5
+    {
+      position: absolute;
+      right:  250px;
+      bottom: 250px;
+      border: 4px solid white;
+    }  
+  .cos6
+    {
+      position: absolute;
+      right:  500px;
+      bottom: 250px;
+      border: 4px solid white;
+    }  
+  .cos7
+    {
+      position: absolute;
+      right:  250px;
+      bottom: 50px;
+      border: 4px solid white;
+    }  
+  .cos8
+    {
+      position: absolute;
+      right:  500px;
+      bottom: 50px;
+      border: 4px solid white;
+    }  
+  
+  #display
+  .display1{
+    position: absolute;
+    right: 880px;
+    bottom: 230px;
+  }
