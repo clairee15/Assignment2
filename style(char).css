@@ -1,3 +1,22 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #152238;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
 li a {
     display: block;
     color: white;
