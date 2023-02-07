@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style(game2).css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
+  <script src="game.js"></script>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="character.html">Character</a></li>
@@ -16,7 +16,20 @@
 </head>
 
 <body>
-  
+    <h2>Dealer: <span id = "dealer-sum"></span></h2>
+    <div id = "dealer-cards">
+        <img id = "hidden" src = "./images/BACK_BLUE.jpg">
+    </div>
+
+    <h2>You: <span id = "your-sum"></span></h2>
+    <div id = "your-cards">
+        <img id = "hidden" src = "./images/BACK_BLUE.jpg">
+    </div>
+
+    <br>
+    <button id = "hit">hit</button>
+    <button id = "stay">stay</button>
+    <p id = "results"></p>
 </body>
 
 </html>
