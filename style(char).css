@@ -97,11 +97,10 @@ li a {
       border: 4px solid white;
     }  
   
-  #display
-  .display1{
+  #display{
     position: absolute;
     right: 880px;
-    bottom: 230px;
+    bottom: 250px;
   }
 
   #save{
