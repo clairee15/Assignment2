@@ -32,6 +32,16 @@ html, body {
     background-color: #111;
   }
 
+  hr{
+    width:1800px;
+  }
+
   #game-intro{
     text-align: center;
+  }
+
+  form{
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
   }
