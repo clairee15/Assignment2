@@ -103,6 +103,8 @@ li a {
     bottom: 250px;
   }
 
-  #save{
-    right: 200px;
+  #button{
+    position: absolute;
+    right: 800px;
+    bottom :100px;
   }
