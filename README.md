@@ -1,3 +1,12 @@
 # Assignment2
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fpoker-cards-image186506201&psig=AOvVaw1ZX0CBf_TvlvEoVKkCLefh&ust=1675834149676000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjNx-vWgv0CFQAAAAAdAAAAABAS
+Home page - introduction to games and features
+Character page - changing on dinosaurs using points accumulated through the two games
+Wordy - Game
+Dino - Game, only game that has customizable features
+
+Not yet implemented:
+Customizable dinosaurs
+Saving of points
+Saving of characters/costumes
+Home page where it features and explains how our website works
