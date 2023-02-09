@@ -6,7 +6,7 @@ Wordy - Game
 Dino - Game, only game that has customizable features
 
 Not yet implemented:
-Customizable dinosaurs
+Customizable dinosaurs - linking to dino game
 Saving of points
 Saving of characters/costumes
 Home page where it features and explains how our website works
