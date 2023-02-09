@@ -1,31 +1,51 @@
 
-html, body {
-    height: 100%;
-    width: 100%;
-    background-color: #152238;
-    color:white;
+#header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
   }
   
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  #nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  li {
-    float: left;
-    border-left: 1px solid #bbb;
-    border-right: 1px solid #bbb;
+  #nav li{
+    list-style: none;
+    padding: 0 20px;
+    position:relative;
   }
-
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+  
+  #nav li a{
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+  }
+  
+  #nav li a:hover,
+  #nav li a.active{
+    color: #088178;
+  }
+  
+  #nav li a.active::after,
+  #nav li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
   }
   
 *{
@@ -41,15 +61,13 @@ html, body {
 .container{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 87vh;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../img/bg.png');
-    background-size: cover;
-    background-position: center;
     font-family: 'roboto', sans-serif;
+    background-color: #088178;
 }
 
 .form{
@@ -81,7 +99,6 @@ input,
     color: #fff;
     padding: 15px;
     transition: .5s;
-    text-transform: capitalize;
 }
 
 input::placeholder{
