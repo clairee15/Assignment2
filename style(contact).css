@@ -196,6 +196,7 @@ body{
     outline: none;
     margin-bottom: 20px;
     border: 1px solid #e1e1e1;
+    resize: none;
 }
 
 #form-details form button{
