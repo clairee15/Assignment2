@@ -1,7 +1,7 @@
 body {
     font-family:'Courier New', Courier, monospace;
     text-align: center;
-    color:white;
+    color:black;
 }
 
 #board {
@@ -12,7 +12,7 @@ body {
 html, body {
     height: 100%;
     width: 100%;
-    background-color: #152238;
+    background-color: #FFFDE7;
   }
   
   ul {
