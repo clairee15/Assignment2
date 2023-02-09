@@ -5,34 +5,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
+  <link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
   <link href="form.css" rel="stylesheet" type="text/css" />
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="character.html">Character</a></li>
-    <li><a href="game.html">Game</a></li>
-    <li><a href="game2.html">Game2</a></li>
-    <li><a href="game3.html">Game3</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="register.html">Register</a></li>
-  </ul>
 </head>
 
 <body>
-    <div class="container">
-        <div class="alert-box">
-            <p class="alert"></p>
-        </div>
-    
-        <div class="form">
-            <h1 class="heading">login</h1>
-            <input type="email" placeholder="email" autocomplete="off" class="email" required>
-            <input type="password" placeholder="password" autocomplete="off" class="password" required>
-            <button class="submit-btn">log in</button>
-            <a href="register.html" class="link">don't have an account? Register one</a>
-        </div>
+  <section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt="" height="80" width="50"> </a>
+    <div>
+      <ul id="nav">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="login">Login</a></li>
+        <li>
+          <btn class="logout">Logout</btn>
+        </li>
+        <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="alert-box">
+      <p class="alert"></p>
     </div>
 
-    <script src="form.js"></script>
+    <div class="form">
+      <h1 class="heading">login</h1>
+      <input type="email" placeholder="email" autocomplete="off" class="email" required>
+      <input type="password" placeholder="password" autocomplete="off" class="password" required>
+      <button class="submit-btn">log in</button>
+      <a href="register.html" class="link">don't have an account? Register one</a>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="document.js"></script>
+  <script src="login.js"></script>
 </body>
 
 </html>
