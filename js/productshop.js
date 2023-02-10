@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function () { //same as product.js
     const APIKEY = "63e4542c478852088da67ef4";
 
     let settings = {

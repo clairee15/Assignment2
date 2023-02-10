@@ -1,4 +1,4 @@
-const form = [...document.querySelector('.form').children];
+const form = [...document.querySelector('.form').children]; //animation
 
 form.forEach((item, i) => {
     setTimeout(() => {
@@ -6,7 +6,7 @@ form.forEach((item, i) => {
     }, i * 100);
 })
 
-function ValidateEmail(Email) {
+function ValidateEmail(Email) { //email validation
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (mailformat.test(Email)) {
         return true;
@@ -14,10 +14,9 @@ function ValidateEmail(Email) {
     else {
         return false;
     }
-
 };
 
-const alertBox = (data) => {
+const alertBox = (data) => { //alerts user if input is wrong
     const alertContainer = document.querySelector('.alert-box');
     const alertMsg = document.querySelector('.alert');
     alertMsg.innerHTML = data;
@@ -35,12 +34,13 @@ $(document).ready(function () {
 
         e.preventDefault();
 
-        let valid = false;
+        let valid = false; //validation of user data
         let Name = $(".name").val();
         let Email = $(".email").val();
         let Password = $(".password").val();
         valid = ValidateEmail(Email);
         if (Name == "") {
+            console.log(Name);
             alertBox("Please fill in your name");
         }
         else if (!valid) {
@@ -49,36 +49,35 @@ $(document).ready(function () {
         else if (Password == "") {
             alertBox("Please fill in your password");
         }
-        else {
-
+        else { //sends data to database
+            let jsondata = {
+                "Name": Name,
+                "Email": Email,
+                "Password": Password,
+            };
+           
             let settings = {
                 "async": true,
                 "crossDomain": true,
                 "url": "https://idassignment2-b8e6.restdb.io/rest/login",
-                "method": "GET", 
+                "method": "POST", 
                 "headers": {
-                  "content-type": "application/json",
-                  "x-apikey": APIKEY,
-                  "cache-control": "no-cache"
+                    "content-type": "application/json",
+                    "x-apikey": APIKEY,
+                    "cache-control": "no-cache"
                 },
-              }
-            
-              $.ajax(settings).done(function(response) {
-                let found = false;
-                for (var i = 0; i < response.length; i++) {
-                    if (response[i].Email == Email && response[i].Password == Password){
-                        found = true;
-                        localStorage.setItem("id", response[i]._id);
-                        setTimeout(() => {
-                            location.href = 'index.html';
-                        }, 1000);
-                    }
-                }
-                if (!found){
-                    alertBox("User not found, please re-enter email and password or register");
-                }
-              });
+                "processData": false,
+                "data": JSON.stringify(jsondata)
+            }
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+            });
+            localStorage.setItem("Email", Email); 
+            localStorage.setItem("Password", Password); 
+            setTimeout(() => {
+                location.href = 'index.html';
+            }, 1000);
         }
     });
 });
-

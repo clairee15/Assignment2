@@ -6,7 +6,7 @@ $(document).ready(function () {
         "async": true,
         "crossDomain": true,
         "url": "https://idassignment2-b8e6.restdb.io/rest/login",
-        "method": "GET", 
+        "method": "GET",
         "headers": {
             "content-type": "application/json",
             "x-apikey": APIKEY,
@@ -30,10 +30,7 @@ $(document).ready(function () {
             }
         };
 
-
-
-
-        const alertBox = (data) => {
+        const alertBox = (data) => { //alert user if they are not logged in
             const alertContainer = document.querySelector('.alert-box');
             const alertMsg = document.querySelector('.alert');
             alertMsg.innerHTML = data;
@@ -53,7 +50,7 @@ $(document).ready(function () {
 
                 $(".instructions").css("display", "none")
 
-                var scaling = "fit"; 
+                var scaling = "fit";
                 var width = 2000;
                 var height = 1000;
                 var color = clear;
@@ -86,12 +83,12 @@ $(document).ready(function () {
                     });
 
                     // reset score if ball hits the bottom
-                    ball.contact(function (obj, body) { 
+                    ball.contact(function (obj, body) {
                         if (body == physics.borderBottom) {
                             $(".winningscreen").css("display", "block");
                             $(".points").html(score.text + " points")
                             var id = localStorage.getItem("id");
-                            var jsondata = {"Points": Number(score.text)};
+                            var jsondata = { "Points": Number(score.text) };
                             var settings = {
                                 "async": true,
                                 "crossDomain": true,
@@ -105,23 +102,21 @@ $(document).ready(function () {
                                 "processData": false,
                                 "data": JSON.stringify(jsondata)
                             }
-                            
+
                             $.ajax(settings).done(function (response) {
                                 console.log(response);
                             });
                             setTimeout(() => {
                                 location.href = 'index.html';
                             }, 3000);
-                        
+
                         };
                     });
 
-
-
                     stage.update(); // this is needed to show any changes
 
-                }); 
+                });
             }
         });
-});
+    });
 });

@@ -1,4 +1,4 @@
-const form = [...document.querySelector('.form').children];
+const form = [...document.querySelector('.form').children]; //animation
 
 form.forEach((item, i) => {
     setTimeout(() => {
@@ -17,7 +17,7 @@ function ValidateEmail(Email) {
 
 };
 
-const alertBox = (data) => {
+const alertBox = (data) => { //alerts user  if input is wrong
     const alertContainer = document.querySelector('.alert-box');
     const alertMsg = document.querySelector('.alert');
     alertMsg.innerHTML = data;
@@ -41,7 +41,6 @@ $(document).ready(function () {
         let Password = $(".password").val();
         valid = ValidateEmail(Email);
         if (Name == "") {
-            console.log(Name);
             alertBox("Please fill in your name");
         }
         else if (!valid) {
@@ -51,34 +50,35 @@ $(document).ready(function () {
             alertBox("Please fill in your password");
         }
         else {
-            let jsondata = {
-                "Name": Name,
-                "Email": Email,
-                "Password": Password,
-            };
-           
-            let settings = {
+
+            let settings = { 
                 "async": true,
                 "crossDomain": true,
                 "url": "https://idassignment2-b8e6.restdb.io/rest/login",
-                "method": "POST", 
+                "method": "GET", 
                 "headers": {
-                    "content-type": "application/json",
-                    "x-apikey": APIKEY,
-                    "cache-control": "no-cache"
+                  "content-type": "application/json",
+                  "x-apikey": APIKEY,
+                  "cache-control": "no-cache"
                 },
-                "processData": false,
-                "data": JSON.stringify(jsondata)
-            }
-
-            $.ajax(settings).done(function (response) {
-                console.log(response);
-            });
-            localStorage.setItem("Email", Email); 
-            localStorage.setItem("Password", Password); 
-            setTimeout(() => {
-                location.href = 'index.html';
-            }, 1000);
+              }
+            
+              $.ajax(settings).done(function(response) { //checks if user entered details matches database
+                let found = false;
+                for (var i = 0; i < response.length; i++) {
+                    if (response[i].Email == Email && response[i].Password == Password){
+                        found = true;
+                        localStorage.setItem("id", response[i]._id);
+                        setTimeout(() => {
+                            location.href = 'index.html';
+                        }, 1000);
+                    }
+                }
+                if (!found){
+                    alertBox("User not found, please re-enter email and password or register");
+                }
+              });
         }
     });
 });
+
