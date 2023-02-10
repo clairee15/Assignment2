@@ -180,6 +180,10 @@
     background-color:#088178;
     color: #fff;
     padding: 12px 20px;
+    background-color: #088178;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    cursor:pointer;
   }
 
   #subtotal{

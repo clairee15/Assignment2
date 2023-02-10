@@ -201,7 +201,11 @@ body{
 
 #form-details form button{
     background-color: #088178;
-    color:fff;
+    color:#fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor:pointer;
 }
 
 #form-details .people div{
