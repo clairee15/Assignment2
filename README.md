@@ -16,16 +16,7 @@ This section is also where you would share links to any wireframes, mockups, dia
 
 Features
 (In this section, you should go over the different parts of your project, and describe each in a sentence or so.)
-Our features include a home page, shop page, about page, game page, contact page and cart page. The home page includes... As for the shop page, it has the different products offered/sold which can be viewed by users. The about page talks about Bluelock, so that new users have a brief understanding of what our
-website is all about. As the the game page,.. The contact page then shows where the current physical store is and ways to contact the store/company. A feedback form is also included to take in feedbacks/thoughts from customers/users to help improve our website or services. The cart page allows users to cart out and buy products. The game and cart page are interlinked as points earned through the game can discount prices when user wishes to cart out.
-
-Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-Features Left to Implement
-Another feature idea
+Our features include a home page, shop page, about page, game page, contact page and cart page. The home page includes the different features our page provides and some featured products from the webstore. As for the shop page, it has the different products offered/sold which can be viewed by users. The about page talks about Bluelock, so that new users have a brief understanding of what our website is all about. As the the game page, it involves a simple interactive ball game where users can earn points through it. The accumulated points can be used as discount/offset once they get to the cart page. The contact page then shows where the current physical store is and ways to contact the store/company. A feedback form is also included to take in feedbacks/thoughts from customers/users to help improve our website or services. The cart page allows users to cart out and buy products. There is also a login and register account page for both new and current users.
 
 Technologies Used
 - JavaScript
@@ -54,12 +45,14 @@ You should also mention in this section any interesting bugs or problems you dis
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 Credits
-
-Content
-The text for section Y was copied from the Wikipedia article Z
+Tech2, AmiAmi, Youtube, Facebook, CrunchyRoll
+"https://www.facebook.com/amiamijapan/"
+"https://twitter.com/amiami_figure?lang=en"
+"https://www.instagram.com/crunchyroll/?hl=en"
+"https://www.youtube.com/@netflixanime>"
 
 Media
-The photos used in this site were obtained from ...
+The photos used in this site were obtained from google.
 
 Acknowledgements
-I received inspiration for this project from X
+I received inspiration for this project from Tech2 and AmiAmi.
