@@ -65,3 +65,5 @@ Individual contribution:
 Walkthrough video - Done by Claire & Yiyang
 Backend implementation - yiyang
 Frontend implementation - Claire
+
+GITHUB: https://github.com/clairee15/Assignment2
