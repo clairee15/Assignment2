@@ -75,10 +75,8 @@ $(document).ready(function () {
                 let found = false;
                 for (var i = 0; i < response.length; i++) {
                     if (response[i].Email == Email && response[i].Password == Password){
-                        console.log(response[i].Email);
                         found = true;
-                        localStorage.setItem("Email", Email); 
-                        localStorage.setItem("Password", Password); 
+                        localStorage.setItem("id", response[i]._id);
                         setTimeout(() => {
                             location.href = 'index.html';
                         }, 1000);

@@ -1,9 +1,6 @@
 if (localStorage.length != 0){
     $(".login").hide();
-    const Email = localStorage.getItem("Email");
-    const Password = localStorage.getItem("Password");
-    console.log(Email);
-    console.log(Password);
+    const id = localStorage.getItem("id");
     $(".logout").on("click", function(e){
         localStorage.clear();
         location.reload();
