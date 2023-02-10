@@ -47,6 +47,9 @@
     bottom: -4px;
     left: 20px;
   }
+h4{
+    font-size: 27px;
+}
   
 *{
     margin: 0;
@@ -67,7 +70,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'roboto', sans-serif;
-    background-color: #088178;
+    background-color: #719cae;
 }
 
 .form{
@@ -84,6 +87,10 @@
     font-size: 80px;
     font-weight: 300;
     margin-bottom: 50px;
+}
+
+.container .form input{
+    width: 100%;
 }
 
 input,
