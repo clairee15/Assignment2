@@ -1,7 +1,7 @@
 # Assignment2
 Your Project's Name
 (One or two paragraphs providing an overview of your project. Tell us about your project.)
-Our project is an ecommerce platform that sells merchandise. It alos includes the addition of a game where users can earn points for redemption upon
+Our project is an ecommerce platform that sells merchandise. It also includes the addition of a game where users can earn points for redemption upon
 checking out their shopping carts.
 
 Design Process
@@ -22,16 +22,33 @@ Technologies Used
 - JavaScript
 - CSS
 - HTML
-- Wireframe
+- Wireframe ---- ID)Asg2_Team8_wireframe.xd
 - Google Maps (map/address)
 - Youtube (video)
+- Jquery
+- Zim Physics Library
+- RestDB
+
 
 (In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.)
 
 JQuery
 The project uses JQuery to simplify DOM manipulation.
 Testing
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as: when changing html elements' content and when communicating with the database
+
+ZIM Physics Library(https://zimjs.com/physics/)
+This library was used in order to create the minigame. It was used to give the object physics such as bounce and gravity in order for the game to work
+
+RestDB(https://restdb.io):
+Rest DB was used as a database to store product details as well as user details in order to create a login and register function
+
+AdobeXD:
+Used to create a wireframe in order to facilitate idea generation and outline for website 
+
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 Contact form:
 Go to the "Contact Us" page
@@ -40,9 +57,11 @@ Try to submit the form with an invalid email address and verify that a relevant 
 Try to submit the form with all inputs valid and verify that a success message appears.
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+Game:
+Does not give the user points that can be redeemed for money. There is no set limit on the number of games that can be played per day
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Cart:
+Does not work as there is no backend implemented
 
 Credits
 Tech2, AmiAmi, Youtube, Facebook, CrunchyRoll
