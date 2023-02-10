@@ -31,15 +31,10 @@ const alertBox = (data) => {
 $(document).ready(function () {
     const APIKEY = "63e4542c478852088da67ef4";
 
-    //[STEP 1]: Create our submit form listener
     $(".submit-btn").on("click", function (e) {
 
-        //prevent default action of the button 
         e.preventDefault();
 
-        //[STEP 2]: let's retrieve form data
-        //for now we assume all information is valid
-        //you are to do your own data validation
         let valid = false;
         let Name = $(".name").val();
         let Email = $(".email").val();
@@ -56,20 +51,17 @@ $(document).ready(function () {
             alertBox("Please fill in your password");
         }
         else {
-
-            //[STEP 3]: get form values when user clicks on send
-            //Adapted from restdb api
             let jsondata = {
                 "Name": Name,
                 "Email": Email,
                 "Password": Password,
             };
-            //[STEP 4]: Create our AJAX settings. Take note of API key
+           
             let settings = {
                 "async": true,
                 "crossDomain": true,
                 "url": "https://idassignment2-b8e6.restdb.io/rest/login",
-                "method": "POST", //[cher] we will use post to send info
+                "method": "POST", 
                 "headers": {
                     "content-type": "application/json",
                     "x-apikey": APIKEY,

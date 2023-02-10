@@ -31,15 +31,10 @@ const alertBox = (data) => {
 $(document).ready(function () {
     const APIKEY = "63e4542c478852088da67ef4";
 
-    //[STEP 1]: Create our submit form listener
     $(".submit-btn").on("click", function (e) {
 
-        //prevent default action of the button 
         e.preventDefault();
 
-        //[STEP 2]: let's retrieve form data
-        //for now we assume all information is valid
-        //you are to do your own data validation
         let valid = false;
         let Name = $(".name").val();
         let Email = $(".email").val();
@@ -60,7 +55,7 @@ $(document).ready(function () {
                 "async": true,
                 "crossDomain": true,
                 "url": "https://idassignment2-b8e6.restdb.io/rest/login",
-                "method": "GET", //[cher] we will use GET to retrieve info
+                "method": "GET", 
                 "headers": {
                   "content-type": "application/json",
                   "x-apikey": APIKEY,
@@ -68,9 +63,6 @@ $(document).ready(function () {
                 },
               }
             
-              //[STEP 8]: Make our AJAX calls
-              //Once we get the response, we modify our table content by creating the content internally. We run a loop to continously add on data
-              //RESTDb/NoSql always adds in a unique id for each data, we tap on it to have our data and place it into our links 
               $.ajax(settings).done(function(response) {
                 let found = false;
                 for (var i = 0; i < response.length; i++) {

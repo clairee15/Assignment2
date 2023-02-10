@@ -97,6 +97,39 @@ body{
     left: 20px;
 }
 
+
+#nav .logout{
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background-color: #088178;
+    font-weight: 500;
+    color:#e8e8e8;
+    border: 10px solid #088178;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02 );
+    transition: ease 0.2;
+    position: relative;
+  }
+  
+  #nav .logout:hover{
+    background-color: #e8e8e8;
+    border: 10px solid #e8e8e8;
+    color: #088178;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06 );
+    cursor: pointer;
+  }
+  
+  #nav .logout:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    right: 8px;
+  }
+
 #page-header.about-header{
     background-image: url("img/banner.jpg");
     text-align :center;
