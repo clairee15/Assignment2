@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+  }
+  
+  h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+  }
+  
+  h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:#222;
+  }
+  
+  h4{
+    font-size:20px;
+    color: #222;
+  }
+  
+  h6{
+    font-weight: 700;
+    font-size: 12px;
+  }
+  
+  .section-p1{
+    padding: 40px 80px;
+  }
+  
+  .section-m1{
+    margin: 40px 0;
+  }
+  
+  body{
+    width: 100%;
+  }
+  
+  #header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  
+  #nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #nav li{
+    list-style: none;
+    padding: 0 20px;
+    position:relative;
+  }
+  
+  #nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+  }
+  
+  #nav li a:hover,
+  #nav li a.active{
+    color: #088178;
+  }
+  
+  #nav li a.active::after,
+  #nav li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+  
+  #nav .logout{
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background-color: #088178;
+    font-weight: 500;
+    color:#e8e8e8;
+    border: 10px solid #088178;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02 );
+    transition: ease 0.2;
+    position: relative;
+  }
+  
+  #nav .logout:hover{
+    background-color: #e8e8e8;
+    border: 10px solid #e8e8e8;
+    color: #088178;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06 );
+    cursor: pointer;
+  }
+  
+  #nav .logout:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    right: 8px;
+  }
+
+.background{
+    position: relative;
+    height: 90vh;
+    background-image: url("img/gamebackground.png");
+    background-size: cover;
+    z-index: -1;
+}
+
+.instructions{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+.instructions h3{
+    padding-top: 10px;
+}
+
+.instructions .start{
+    margin-top: 10px;
+    background-color: #088178;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background-color: #088178;
+    font-weight: 500;
+    color:#e8e8e8;
+    border: 15px solid #088178;
+    border-radius: 20px;
+    transition: ease 0.2;
+    position: relative;
+}
+
+.instructions .start:hover{
+    background-color: #e8e8e8;
+    border: 10px solid #e8e8e8;
+    color: #088178;
+    cursor: pointer;
+  }
+
+  .winningscreen{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+  }
+
+
+.winningscreen iframe{
+    margin-left: auto;
+    margin-right: auto;
+
+    border: none;
+}
+
+.winningscreen h3{
+    padding-top: 10px;
+}
+
+.winningscreen .points{
+    padding-top: 0px;
+}
+
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255, 119, 119);
+    border-top: 10px solid rgb(255, 37, 37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+}

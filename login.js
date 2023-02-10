@@ -46,7 +46,6 @@ $(document).ready(function () {
         let Password = $(".password").val();
         valid = ValidateEmail(Email);
         if (Name == "") {
-            console.log(Name);
             alertBox("Please fill in your name");
         }
         else if (!valid) {
