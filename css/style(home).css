@@ -128,7 +128,7 @@ body{
 }
 
 #hero{
-  background-image: url("img/bluelock_banner2.jpg");
+  background-image: url("../img/bluelock_banner2.jpg");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -161,7 +161,7 @@ body{
 }
 
 #hero button{
-  background-image: url("img/button.png");
+  background-image: url("../img/button.png");
   background-size: cover;
   background-position: top 50% left 0%;
   background-color:transparent;

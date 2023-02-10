@@ -122,7 +122,7 @@
 .background{
     position: relative;
     height: 90vh;
-    background-image: url("img/gamebackground.png");
+    background-image: url("../img/gamebackground.png");
     background-size: cover;
     z-index: -1;
 }

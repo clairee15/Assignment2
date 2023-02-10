@@ -131,7 +131,7 @@ body{
   }
 
 #page-header.about-header{
-    background-image: url("img/banner.jpg");
+    background-image: url("../img/banner.jpg");
     text-align :center;
 }
 
